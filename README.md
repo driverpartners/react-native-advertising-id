@@ -1,6 +1,5 @@
 
 # react-native-advertising-id
-[![npm version](https://badge.fury.io/js/react-native-advertising-id.svg)](https://badge.fury.io/js/react-native-advertising-id)
 
 Consistent access to Advertising Id (AAID/GAID and IDFA) for Android and iOS on React Native.
 
@@ -16,11 +15,11 @@ Consistent access to Advertising Id (AAID/GAID and IDFA) for Android and iOS on 
 
 `$ npm install react-native-advertising-id --save`
 
-### Mostly automatic installation
+### Automatic Installation
 
-`$ react-native link react-native-advertising-id`
+`$ npx react-native link`
 
-### Manual installation
+### Manual Installation
 
 
 #### iOS
@@ -44,13 +43,13 @@ Consistent access to Advertising Id (AAID/GAID and IDFA) for Android and iOS on 
     ```gradle
       compile project(':react-native-advertising-id')
     ```
-4. Update your `mainfest.xml` and declare that your app is an Ad Manager app, as instructed on [Google's Ad Manager guide](https://developers.google.com/ad-manager/mobile-ads-sdk/android/quick-start#update_your_androidmanifestxml):
+4. Update your `AndroidManifest.xml` and declare that your app is an Ad Manager app, as instructed on [Google's Ad Manager guide](https://developers.google.com/ad-manager/mobile-ads-sdk/android/quick-start#update_your_androidmanifestxml):
 ```xml
 <manifest>
     <application>
         <meta-data
-            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
-            android:value="true"/>
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="YOUR ID HERE"/>
     </application>
 </manifest>
 ```
